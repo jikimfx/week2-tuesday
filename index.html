@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coderschool Currency Converter</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container text-center">
+        <img class="logo m-4" src="img/currency-converter-logo.png" />
+        <div class="radio-container bg-warning pt-2 pb-2 mb-3">
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="currencyRadioButton" value="EUR" checked>
+                <label class="form-check-label">EUR</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="currencyRadioButton" value="USD">
+                <label class="form-check-label">USD</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="currencyRadioButton" value="VND">
+                <label class="form-check-label">VND</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="currencyRadioButton" value="KRW">
+                <label class="form-check-label">KRW</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="currencyRadioButton" value="JPY">
+                <label class="form-check-label">JPY</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="currencyRadioButton" value="SGD">
+                <label class="form-check-label">SGD</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="text" class="form-control" id="amountConvert">
+            <button type="button" class="btn btn-danger ml-2" id="updateButton">Update</button>
+        </div>
+
+        <div class="table-container mt-3">
+            <table class="table table-dark">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr class="d-flex eur">
+                        <td class="col-1 flag-icon-background flag-icon-eu mt-2 mb-2"></td>
+                        <td class="col-3" id="toCurrency" value="USD">EUR</td>
+                        <td class="col-4">Euro Dollar</td>
+                        <td class="col-4 text-white bg-success" id="toEurResult"></td>
+                    </tr>
+                    <tr class="d-flex usd">
+                        <td class="col-1 flag-icon-background flag-icon-us mt-2 mb-2"></td>
+                        <td class="col-3" id="toCurrency" value="USD">USD</td>
+                        <td class="col-4">US Dollar</td>
+                        <td class="col-4 text-white bg-success" id="toUsdResult"></td>
+                    </tr>
+                    <tr class="d-flex vnd">
+                        <td class="col-1 flag-icon-background flag-icon-vn mt-2 mb-2"></td>
+                        <td class="col-3" id="toCurrency" value="VND">VND</td>
+                        <td class="col-4">Vietnam Dong</td>
+                        <td class="col-4 text-white bg-success" id="toVndResult"></td>
+                    </tr>
+                    <tr class="d-flex krw">
+                        <td class="col-1 flag-icon-background flag-icon-kr mt-2 mb-2"></td>
+                        <td class="col-3" id="toCurrency" value="KRW">KRW</td>
+                        <td class="col-4">Korean Won</td>
+                        <td class="col-4 text-white bg-success" id="toKrwResult"></td>
+                    </tr>
+                    <tr class="d-flex jpy">
+                        <td class="col-1 flag-icon-background flag-icon-jp mt-2 mb-2"></td>
+                        <td class="col-3" id="toCurrency" value="JPY">JPY</td>
+                        <td class="col-4">Japanese Yen</td>
+                        <td class="col-4 text-white bg-success" id="toJpyResult"></td>
+                    </tr>
+                    <tr class="d-flex sgd">
+                        <td class="col-1 flag-icon-background flag-icon-sg mt-2 mb-2"></td>
+                        <td class="col-3" id="toCurrency" value="SGD">SGD</td>
+                        <td class="col-4">Singapore Dollar</td>
+                        <td class="col-4 text-white bg-success" id="toSgdResult"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

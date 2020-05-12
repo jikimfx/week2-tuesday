@@ -1,0 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+body {
+    /* background: #F4F9FD; */
+    background: #fff;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.logo { width: 300px; }
+.container { width: 650px; }
+.radio-container { font-size: 20px; }
+.hide { display: none; }
