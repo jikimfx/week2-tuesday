@@ -9,3 +9,5 @@ body {
 .container { width: 650px; }
 .radio-container { font-size: 20px; }
 .hide { display: none; }
+
+.coinchange-container {}
